@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Cinema';
+    src: url("fonts/Cinema.ttf");
+}
+
 @media (min-width:768px) {
   .news-input{
     width: 50%;
@@ -47,7 +52,7 @@ nav{
   width:100%;
 }
 .zoom:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 @media(max-width:751px){
   #wave{
@@ -65,23 +70,81 @@ nav{
 .contact-us .social-media-icon {
     width: 10vw;
     height: 10vw;
-    border-radius: 5%;
-    /*fill: black;*/
-    margin: 2rem;
+    max-width: 100px;
+    max-height: 100px;
     /*generated filter from white color with https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(103%) contrast(103%);
-    grid-column: 1;
+    position: relative;
+    top: 0;
+    /*transition: transform 1s;*/
 }
 
 .contact-us .social-media-icon:hover {
     /*generated filter from orange color with https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(79%) sepia(79%) saturate(2027%) hue-rotate(341deg) brightness(106%) contrast(92%);
-    z-index: 5;
+    top: -.5vw;
+    width: 10.5vw;
+    height: 10.5vw;
+    /*transform: scale(1.1) translateY(-.5vw);*/
+    transition: width ease .25s, height ease .25s, top ease .25s;
+}
+
+.contact-us .text:hover {
+    font-size: 12vw;
+    transition: font-size ease .25s;
+}
+
+.contact-us .text span {
+    color: #FEFEFE;
+    font-family: 'Cinema';
+    font-size: 10vw;
+}
+
+.contact-us .text span:nth-child(3n) {
+    color: #F4C026;
 }
 
 .contact-us .grid-container {
     display: grid;
+    background: rgb(49, 49, 49);
+    justify-content: space-around;
+    align-content: stretch;
 }
 
-/*@media only screen and (max-width: 600px) {*/
-/*}*/
+/* dextop version */
+@media only screen and (min-width: 768px) {
+    .contact-us .social-media-icon {
+        grid-column: 1;
+    }
+
+    .contact-us .grid-container {
+        clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 90%, 98.5% 90%, 50% 100%, 1.5% 90%, 0% 90%);
+        height: 90vw;
+        padding: 20%;
+    }
+
+    .contact-us .text {
+        grid-column: 2;
+        grid-row: 1/3;
+        text-align: right;
+    }
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+    .contact-us .social-media-icon {
+        grid-row: 1;
+    }
+
+    .contact-us .grid-container {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        height: 120vw;
+        padding: 20%;
+    }
+
+    .contact-us .text {
+        grid-row: 0;
+        grid-column: 1/3;
+        text-align: center;
+    }
+}
