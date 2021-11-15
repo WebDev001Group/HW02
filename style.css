@@ -22,6 +22,10 @@ body::before{
   left: -25%;
 
 }
+#text:hover h6 {
+  font-weight: bold;
+  /* color: aqua */
+}
 section{
   min-height: 40vh;
 }
@@ -48,6 +52,14 @@ nav{
 @media(max-width:751px){
   #wave{
     display:none;
+  }
+  .imgA{
+    /* left: 25%; */
+    right: 20%;
+    position: relative;
+  }
+  #imgA1{
+    display: none;
   }
 }
 .contact-us .social-media-icon {
