@@ -42,6 +42,9 @@ nav{
   bottom:0;
   width:100%;
 }
+.zoom:hover {
+  transform: scale(1.1); 
+}
 @media(max-width:751px){
   #wave{
     display:none;
