@@ -15,19 +15,16 @@ body::before{
   border-radius: 30px;
   
 }
-
 .imgA {
-	position:absolute;
-  top: 4vw;
-  left: 4vw;
-	width:20vw;
-	height:20vw;
+	 /* position:absolute; */
+  top: 0px;
+  left: 0px; 
   z-index: 3;
 }
 #imgA1{
   z-index: 1;
-  top: 2vw;
-  left: 2vw;
+  top: 20px;
+  left: 20px;
 }
 #imgA1:hover{ 
   z-index:555555;
