@@ -13,7 +13,7 @@ body::before{
 }
 .lorembtn{
   border-radius: 30px;
-  
+
 }
 .imgA {
 	 /* position:absolute; */
@@ -26,6 +26,30 @@ body::before{
   top: 20px;
   left: 20px;
 }
-#imgA1:hover{ 
+#imgA1:hover{
   z-index:555555;
 }
+
+.contact-us .social-media-icon {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5%;
+    /*fill: black;*/
+    margin: 2rem;
+    /*generated filter from white color with https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(103%) contrast(103%);
+    grid-column: 1;
+}
+
+.contact-us .social-media-icon:hover {
+    /*generated filter from orange color with https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(79%) sepia(79%) saturate(2027%) hue-rotate(341deg) brightness(106%) contrast(92%);
+    z-index: 5;
+}
+
+.contact-us .grid-container {
+    display: grid;
+}
+
+/*@media only screen and (max-width: 600px) {*/
+/*}*/
