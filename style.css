@@ -37,6 +37,16 @@ section{
 nav{
   z-index:6;
 }
+#wave{
+  position: absolute;
+  bottom:0;
+  width:100%;
+}
+@media(max-width:751px){
+  #wave{
+    display:none;
+  }
+}
 .contact-us .social-media-icon {
     width: 10vw;
     height: 10vw;
