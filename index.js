@@ -16,4 +16,8 @@ function generate() {
 
 }
 
+function newsSubmit() {
+    // todo open dialog and then shpw toast on confirm of dialog
+}
+
 document.onload = generate();
