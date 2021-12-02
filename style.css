@@ -3,7 +3,7 @@
     src: url("fonts/Cinema.ttf");
 }
 
-@media (min-width:601px) {
+@media (min-width:576px) {
   .news-input{
     width: 50%;
   }
@@ -54,7 +54,7 @@ nav{
 .zoom:hover {
   transform: scale(1.1);
 }
-@media(max-width:600px){
+@media(max-width:575px){
   #wave{
     display:none;
   }
@@ -113,7 +113,7 @@ nav{
 }
 
 /* dextop version */
-@media only screen and (min-width: 601px) {
+@media (min-width: 576px) {
     .contact-us .social-media-icon {
         grid-column: 1;
     }
@@ -132,7 +132,7 @@ nav{
 }
 
 /* mobile version */
-@media only screen and (max-width: 600px) {
+@media (max-width: 575px) {
     .contact-us .social-media-icon {
         grid-row: 1;
     }
@@ -151,17 +151,8 @@ nav{
 }
 
 .news-container {
-    alignment: right;
     background-color: #667FFF;
     border-radius: 4px;
-    display: grid;
-    place-items: center;
-    max-width: 475px;
-    width: 80vw;
-    max-height: 100px;
-    height: 15vw;
-    position: absolute;
-    top: -40px;
 }
 
 .news-title {
@@ -174,10 +165,6 @@ nav{
     background-color: #E0E6FF;
     border: none;
     border-radius: 4px;
-    max-width: 375px;
-    width: 20vw;
-    /*max-height: 75px;*/
-    /*height: 4vw;*/
     padding: .25vw .5vw;
     color: #7D7D7D;
     font-size: small;
@@ -196,8 +183,6 @@ nav{
     border-radius: 4px;
     max-width: 250px;
     width: 12.5vw;
-    /*max-height: 75px;*/
-    /*height: 4vw;*/
     padding: .25vw .5vw;
     cursor: pointer;
     font-family: 'Cinema';
@@ -205,9 +190,24 @@ nav{
     font-size: large;
 }
 
-@media only screen and (min-width: 601px) {
+@media (max-width: 575px) {
+    .news-container-top {
+        transform: translateY(30%)
+    }
+
+    .news-form-guide {
+        height: 0;
+        width: 0;
+        font-size: 0;
+    }
+}
+
+@media (min-width: 576px) {
     .news-container {
-        top: -468px;
+        margin-top: -275px;
+    }
+    .news-container-top {
+        transform: translateY(10%)
     }
 
     .news-title {
@@ -218,8 +218,10 @@ nav{
     .news-form-field {
         padding: .25vw 1.5vw;
         font-size: large;
-        max-width: 500px;
-        width: 85vw;
+    }
+
+    .news-form-guide {
+        visibility: visible;
     }
 
     .news-form-field::placeholder {
