@@ -8,10 +8,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">-->
-<!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-<!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <title>Front end bootcamp</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -327,21 +335,23 @@
   <div class="rows-2 text-white text-center">
     <div class="container news-container-top px-5">
       <div class="news-container col">
-        <p class="news-title">خبر نامه</p>
+        <p class="news-title m-2">خبر نامه</p>
         <div class="col-sm-12 px-sm-3">
-          <label class="news-form-guide form-label" for="firstName">نام<br></label>
+          <label class="news-form-guide form-label float-start" for="firstName">نام<br></label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="firstName" type="text"
                  placeholder="نام" required>
 
-          <label class="news-form-guide form-label" for="lastName">نام خانوادگی<br></label>
+          <label class="news-form-guide form-label float-start" for="lastName">نام خانوادگی<br></label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="lastName" type="text"
                  placeholder="نام خانوادگی" required>
 
-          <label class="news-form-guide form-label" for="email">ایمیل</label>
+          <label class="news-form-guide form-label float-start" for="email">ایمیل</label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="email" type="email"
                  placeholder="ایمیل" required>
 
-          <button class="news-btn btn btn-primary col-2 col-sm-12 " type="button" onclick="newsSubmit()">تایید</button>
+          <button class="news-btn btn btn-primary mb-1 mt-sm-1 mb-sm-2 col-2 col-sm-2 " type="button" data-toggle="modal"
+                  data-target="#newsModal">تایید
+          </button>
         </div>
       </div>
     </div>
@@ -356,10 +366,33 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+<!--   Modal -->
+  <div class="modal fade" id="newsModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p dir="ltr">Are you sure you want to do this?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="displayNotification()">Yes
+          </button>
+          <button type="button" class="btn btn-secondary float-start" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-container" style="position: fixed; bottom: 20px; left: 20px;">
+<!--    <div id="newsSuccessToast" class="toast fade bg-success text-white" data-autohide="true" >-->
+<!--      <div class="toast-body">-->
+<!--        <div class="d-flex">-->
+<!--          <p style="font-size: large">عملیات با موفقیت انجام شد</p>-->
+<!--          <button type="button" class="btn-close btn-close-white me-2 m-auto"></button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
 
 </body>
 

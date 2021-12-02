@@ -177,6 +177,12 @@ nav{
     color: #B4B4B7;
 }
 
+.news-form-guide {
+    padding: .25vw .5vw;
+    font-size: small;
+    color: #dbdbdc;
+}
+
 .news-btn {
     background-color: #F5C025;
     border: none;
@@ -188,6 +194,10 @@ nav{
     font-family: 'Cinema';
     color: #313131;
     font-size: large;
+}
+
+.toast-body {
+    font-family: 'Cinema';
 }
 
 @media (max-width: 575px) {
@@ -218,10 +228,6 @@ nav{
     .news-form-field {
         padding: .25vw 1.5vw;
         font-size: large;
-    }
-
-    .news-form-guide {
-        visibility: visible;
     }
 
     .news-form-field::placeholder {
