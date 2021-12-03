@@ -1,0 +1,93 @@
+
+.news-container {
+    background-color: #667FFF;
+    border-radius: 4px;
+}
+
+.news-title {
+    font-family: 'Cinema';
+    font-size: larger;
+}
+
+.news-form-field {
+    text-align: right;
+    background-color: #E0E6FF;
+    border: none;
+    border-radius: 4px;
+    padding: .25vw .5vw;
+    color: #7D7D7D;
+    font-size: small;
+}
+
+.news-form-field::placeholder {
+    /*font-family: 'Cinema';*/
+    padding: .25vw .5vw;
+    font-size: small;
+    color: #B4B4B7;
+}
+
+.news-form-guide {
+    padding: .25vw .5vw;
+    font-size: small;
+    color: #dbdbdc;
+}
+
+.news-btn {
+    background-color: #F5C025;
+    border: none;
+    border-radius: 4px;
+    max-width: 250px;
+    width: 12.5vw;
+    padding: .25vw .5vw;
+    cursor: pointer;
+    font-family: 'Cinema';
+    color: #313131;
+    font-size: large;
+}
+
+.toast-body {
+    font-family: 'Cinema';
+}
+
+@media (max-width: 575px) {
+    .news-container-top {
+        transform: translateY(30%)
+    }
+
+    .news-form-guide {
+        height: 0;
+        width: 0;
+        font-size: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .news-container {
+        margin-top: -275px;
+    }
+    .news-container-top {
+        transform: translateY(10%)
+    }
+
+    .news-title {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .news-form-field {
+        padding: .25vw 1.5vw;
+        font-size: large;
+    }
+
+    .news-form-field::placeholder {
+        visibility: hidden;
+        padding: .25vw 1.5vw;
+    }
+
+    .news-btn {
+        padding: .25vw 1.5vw;
+        font-size: x-large;
+        max-width: 150px;
+        width: 25vw;
+    }
+}
