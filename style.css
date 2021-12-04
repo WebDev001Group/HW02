@@ -49,17 +49,16 @@ nav{
 #wave{
   position: absolute;
   bottom:0;
-  width:100%;
+  width:120%;
 }
 .zoom:hover {
   transform: scale(1.1);
 }
-@media(max-width:575px){
+@media(max-width:770px){
   #wave{
     display:none;
   }
   .imgA{
-    /* left: 25%; */
     right: 20%;
     position: relative;
   }
