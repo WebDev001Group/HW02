@@ -92,6 +92,13 @@
     font-size: 1.2em;
 }
 
+@media (min-width: 600px) {
+    #gallery-carousel .carousel-item {
+        display: none;
+        margin: 0;
+    }
+}
+
 .carousel-control-prev, .carousel-control-next {
     border-bottom: 0;
 }
