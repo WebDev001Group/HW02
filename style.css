@@ -90,10 +90,12 @@ nav{
 
   .card-img{
     float: right;
+    padding: 20px;
   }
 
   .card-text{
     font-size: large;
+    margin-top: 15px ;
   }
 
 }
