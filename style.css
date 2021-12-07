@@ -107,6 +107,13 @@ nav{
 
 }
 
+.carousel-control{
+  position: absolute;
+  width: 20px;
+  max-height: 20px;
+  top:50%
+}
+
 
 @font-face {
   font-family: 'b nazanin';
