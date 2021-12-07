@@ -3,13 +3,8 @@
   src: url("fonts/Cinema.ttf");
 }
 
-@font-face {
-  font-family: 'BalooBhaijaan2';
-  src: url("fonts/BalooBhaijaan2.ttf");
-}
-
 body {
-  font-family: BalooBhaijaan2;
+  font-family: yekan;
 }
 
 @media (min-width:576px) {
@@ -127,11 +122,15 @@ nav{
   top:50%;
 }
 
-#left{
+.comments-arrow-icon {
+  background-color: orange;
+}
+
+.left{
   left: -40px;
 }
 
-#right{
+.right{
   right: -40px;
 }
 
