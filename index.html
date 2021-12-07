@@ -6,41 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"-->
-<!--    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">-->
-<!--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
-<!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"-->
-<!--          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"-->
-<!--          crossorigin="anonymous"></script>-->
 
-<!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 
-  <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"-->
-<!--          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"-->
-<!--          crossorigin="anonymous"></script>-->
-<!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"-->
-<!--          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"-->
-<!--          crossorigin="anonymous"></script>-->
-  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+  <script src="index.js"></script>
   <title>Front end bootcamp</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="news-style.css">
   <link rel="stylesheet" href="contact-us-style.css">
   <link rel="stylesheet" href="gallery-style.css">
-  <link rel="stylesheet" href="dark.css">
-
-  <link id="dark-theme-style" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -422,11 +406,11 @@
   <div class="w-100 d-inline d-sm-none">
     <div id="gallery-carousel" class="carousel slide p-3" data-bs-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="4"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="3"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="2"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="1"></li>
         <li data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#gallery-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#gallery-carousel" data-bs-slide-to="2"></li>
+        <li data-bs-target="#gallery-carousel" data-bs-slide-to="3"></li>
+        <li data-bs-target="#gallery-carousel" data-bs-slide-to="4"></li>
       </ol>
 
       <div class="carousel-inner">
@@ -517,15 +501,15 @@
       <div class="news-container col">
         <p class="news-title m-2">خبر نامه</p>
         <div class="col-sm-12 px-sm-3">
-          <label class="news-form-guide form-label float-end" for="firstName">نام<br></label>
+          <label class="news-form-guide form-label float-start" for="firstName">نام<br></label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="firstName" type="text"
                  placeholder="نام" required>
 
-          <label class="news-form-guide form-label float-end" for="lastName">نام خانوادگی<br></label>
+          <label class="news-form-guide form-label float-start" for="lastName">نام خانوادگی<br></label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="lastName" type="text"
                  placeholder="نام خانوادگی" required>
 
-          <label class="news-form-guide form-label float-end" for="email">ایمیل</label>
+          <label class="news-form-guide form-label float-start" for="email">ایمیل</label>
           <input class="news-form-field input-group-sm mb-2 col-3 col-sm-12" id="email" type="email"
                  placeholder="ایمیل" required>
 
@@ -574,7 +558,6 @@
 <!--    </div>-->
   </div>
 
-  <script src="dist/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
 </body>
 
