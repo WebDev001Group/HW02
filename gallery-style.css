@@ -81,6 +81,7 @@
         font-size: 3em;
         font-weight: 600;
     }
+
     .gallery-details p {
         font-size: 2em;
         font-weight: 600;
@@ -90,13 +91,6 @@
 .gallery-details p {
     color: whitesmoke;
     font-size: 1.2em;
-}
-
-@media (min-width: 600px) {
-    #gallery-carousel .carousel-item {
-        display: none;
-        margin: 0;
-    }
 }
 
 .carousel-control-prev, .carousel-control-next {
