@@ -84,20 +84,20 @@ nav{
 }
 
 @media(min-width: 600px){
-  .card{
+  .ali{
     flex-direction: row;
   }
 
-  .card-body{
+  .card-body-img{
     max-width: 50%
   }
 
-  .card-img{
+  .img{
     float: right;
     padding: 20px;
   }
 
-  .card-text{
+  .txt{
     font-size: large;
     margin-top: 15px ;
   }
@@ -105,7 +105,7 @@ nav{
 }
 
 @media(max-width: 600px){
-  .card{
+  .ali{
     flex-direction: column-reverse;
   }
 
@@ -117,13 +117,18 @@ nav{
 
 .carousel-control{
   position: absolute;
-  width: 20px;
-  max-height: 20px;
+  width: 30px;
+  max-height: 30px;
   top:50%;
 }
 
 .comments-arrow-icon {
   background-color: orange;
+  border-radius:10px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: larger;
 }
 
 .left{
@@ -163,7 +168,7 @@ nav{
   font-style: normal;
 }
 
-.card-text{
+.txt{
   font-size: medium;
   font-family: 'yekan';
 }
