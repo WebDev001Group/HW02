@@ -98,9 +98,14 @@
 }
 
 .carousel-indicators li {
-    width: 16px;
-    height: 16px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border-radius: 100% !important;
+    background-color: white;
+}
+
+.carousel-indicators li.active {
+    background-color: orangered;
 }
