@@ -184,6 +184,12 @@ nav{
   position: absolute;
 }
 
+.comments-title {
+  font-family: 'Cinema';
+  font-size: xx-large;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .quote-icon {
     width: 10vw;
@@ -197,6 +203,11 @@ nav{
 }
 
 @media (min-width: 1000px) {
+  .card-img {
+    width: 40vw;
+    height: 40vw;
+  }
+
   .quote-icon {
     transform: translate(-2.5vw, 50%);
   }

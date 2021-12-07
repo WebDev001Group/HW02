@@ -1,4 +1,4 @@
-section{
+body{
     background-color: darkslategrey;
 }
 #svg_5{
@@ -62,14 +62,6 @@ section{
 }
 
 /* news dark mode changes */
-.above-footer {
-    background-color: darkslategray;
-}
-
-.news-container-top-top {
-    background-color: darkslategray;
-}
-
 .news-container {
     background-color: steelblue;
 }
@@ -91,4 +83,13 @@ footer {
 
 .modal-footer button {
     color: lightgray;
+}
+
+.comments-title {
+    color: white;
+}
+
+.comments .ali {
+    background-color: slategray;
+    color: white;
 }
