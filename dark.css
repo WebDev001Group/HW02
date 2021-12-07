@@ -1,0 +1,18 @@
+section{
+    background-color: darkslategrey;
+}
+#svg_5{
+    fill: darkslategrey;
+    stroke: none;
+}
+.mycard{
+    color: white;
+    background-color: dimgray;
+}
+.box-learn{
+    color: white;
+}
+#theme-toggler{
+    color: white;
+    background-color: dimgray;
+  }

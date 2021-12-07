@@ -20,6 +20,10 @@ body::before{
   border-radius: 30px;
 
 }
+#svg_5{
+  stroke:none;
+  fill: white;
+}
 .imgA {
   position: relative;
   z-index: 1;
@@ -42,6 +46,14 @@ section{
 }
 #imgA1:hover{
   z-index:5;
+}
+.mycard{
+  background-color: white;
+  color: black;
+}
+#theme-toggler{
+  color: black;
+  background-color: wheat;
 }
 nav{
   z-index:6;

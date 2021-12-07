@@ -1,3 +1,5 @@
+
+
 function generate() {
 
     var hexValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e"];
@@ -11,8 +13,10 @@ function generate() {
     }
     var gradient = "linear-gradient(to bottom, rgba(" + arr[0] + "," + arr[1] + " , " + arr[2] + ", 0.52), rgba(" + arr[3] + ", " + arr[4] + ", " + arr[5] + ", 0.73))";
 
-
-    document.getElementById("cp").style.backgroundImage = gradient
+    if(document.getElementById("cp")){
+      document.getElementById("cp").style.backgroundImage = gradient
+    }
+    
 
 }
 
@@ -86,3 +90,28 @@ function displayNotification(message, color, time, hide){
 }
 
 document.onload = generate();
+
+var isDark =false;
+function toggleTheme() {
+  isDark = !isDark;
+  if (isDark) {
+    enableDarkTheme();
+  } else {
+    disableDarkTheme();
+  }
+}
+
+function enableDarkTheme() {
+  const DARK_THEME_PATH = "dark.css";
+  const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+  const THEME_TOGGLER = document.getElementById("theme-toggler");
+  DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
+  THEME_TOGGLER.innerHTML = "🌙 Dark";
+}
+
+function disableDarkTheme() {
+  const DARK_STYLE_LINK = document.getElementById("dark-theme-style");
+  const THEME_TOGGLER = document.getElementById("theme-toggler");
+  DARK_STYLE_LINK.setAttribute("href", "");
+  THEME_TOGGLER.innerHTML = "🌞 Light";
+}

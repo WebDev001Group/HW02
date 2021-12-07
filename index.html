@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <script src="index.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>
@@ -19,11 +21,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"></script>
-  <script src="index.js"></script>
   <title>Front end bootcamp</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="news-style.css">
   <link rel="stylesheet" href="contact-us-style.css">
+  <!-- <link rel="stylesheet" href="dark.css"> -->
+
+  <link id="dark-theme-style" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -33,6 +38,17 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
+      
+     
+      <div class="row">
+        <button id="theme-toggler" class="btn  col" onclick="toggleTheme()" type="button"   >
+          🌞 Light
+        </button>
+        <div class="p-2 mx-2 rounded col" style="background-color:lightsteelblue;">
+          <img src="./img/red_logo_200x200.png" class="logo" alt="">
+        </div>
+      </div>
       <div class="collapse navbar-collapse" id="nav1">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -52,10 +68,11 @@
           </li>
         </ul>
       </div>
+      
+      
+      
       <!-- <a href="#" class="navbar-brand">Front End BootCamp</a> -->
-      <div class="p-2  rounded" style="background-color:lightsteelblue;">
-        <img src="./img/red_logo_200x200.png" class="logo" alt="">
-      </div>
+      
 
 
     </div>
@@ -69,9 +86,9 @@
     <svg id="wave" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
       <g>
         <title>Layer 1</title>
-        <path style="stroke:none; fill:white;" stroke-width="0" id="svg_5"
+        <path stroke-width="0" id="svg_5"
           d="m-40.4,407.2c195,-154 177,79 390,-4c213,-83 289,-73 402,13c113,86 208,-175 216,-163c8,12 -81,367 -81,366c0,-1 -897,-11 -896.6,-11.2c-0.4,0.2 -225.4,-46.8 -30.4,-200.8z"
-          opacity="NaN" stroke="#000" fill="#00ff7f" />
+          opacity="NaN"  />
       </g>
 
     </svg>
@@ -104,7 +121,7 @@
     <div class="container">
       <div class="row text-center g-4">
         <div class="col-md zoom ">
-          <div class="card bg-light br-5 rounded shadow text-dark m-4">
+          <div class="card   br-5 rounded shadow mycard m-4">
             <div class="card-body  text-start text-light rounded-top" style="background-color:cornflowerblue;">
               <h4>لورم</h4>
               <h1>لورم ایپسوم</h1>
@@ -156,8 +173,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md zoom">
-          <div class="card bg-light br-5 rounded shadow text-dark m-4 position-relative">
+        <div class="col-md  zoom">
+          <div class="card  br-5 rounded shadow mycard m-4 position-relative mycard ">
             <div class="position-absolute   px-3  text-light" style="left:0px;top:12px;transform: rotate(270deg); line-height: 100%;background-color: darkred;">
               <h6>مهم</h6>
             </div>
@@ -213,7 +230,7 @@
           </div>
         </div>
         <div class="col-md zoom">
-          <div class="card bg-light br-5 rounded shadow text-dark m-4">
+          <div class="card mycard br-5 rounded shadow  m-4">
             <div class="card-body  text-start text-light rounded-top" style="background-color:cornflowerblue;">
               <h4>لورم</h4>
               <h1>لورم ایپسوم</h1>
@@ -275,7 +292,7 @@
   <!-- learn section -->
   <section class="p-5  " id="learn">
     <div class="container">
-      <div class="row ">
+      <div class="row box-learn ">
 
         <div class="col-md p-5 ">
           <h2>لورم ایپسوم</h2>
