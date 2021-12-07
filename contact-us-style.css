@@ -1,15 +1,19 @@
+.contact-us {
+    background-color: white !important;
+}
+
+.contact-us .grid-container {
+    background-color: lightgray !important;
+}
 
 .contact-us .social-media-icon {
     width: 100px;
     height: 100px;
-    /*generated filter from white color with https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(103%) contrast(103%);
 }
 
 .contact-us .social-media-icon:hover {
     /*generated filter from orange color with https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(79%) sepia(79%) saturate(2027%) hue-rotate(341deg) brightness(106%) contrast(92%);
-    top: -.5vw;
+    filter: invert(30%) sepia(51%) saturate(3894%) hue-rotate(359deg) brightness(101%) contrast(108%);    top: -.5vw;
     width: 120px;
     height: 120px;
     transition: width ease .25s, height ease .25s, top ease .25s;
@@ -21,13 +25,13 @@
 }
 
 .contact-us .text span {
-    color: #FEFEFE;
+    color: #313131;
     font-family: 'Cinema';
     font-size: 60px;
 }
 
 .contact-us .text span:nth-child(3n) {
-    color: #F4C026;
+    color: orangered;
 }
 
 /* dextop version */

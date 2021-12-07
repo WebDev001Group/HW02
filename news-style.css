@@ -1,12 +1,16 @@
+footer {
+    background-color: lightgray !important;
+}
 
 .news-container {
-    background-color: #667FFF;
+    background-color: royalblue;
     border-radius: 4px;
 }
 
 .news-title {
     font-family: 'Cinema';
     font-size: larger;
+    text-align: start;
 }
 
 .news-form-field {
@@ -15,7 +19,7 @@
     border: none;
     border-radius: 4px;
     padding: .25vw .5vw;
-    color: #7D7D7D;
+    color: dimgray;
     font-size: small;
 }
 
@@ -23,7 +27,7 @@
     /*font-family: 'Cinema';*/
     padding: .25vw .5vw;
     font-size: small;
-    color: #B4B4B7;
+    color: dimgray;
 }
 
 .news-form-guide {
