@@ -54,19 +54,19 @@
       <div class="collapse navbar-collapse" id="nav1">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#p1" class="nav-link">بخش اول </a>
+            <a href="#cards-section" class="nav-link">بخش اول </a>
           </li>
           <li class="nav-item">
-            <a href="#p2" class="nav-link">بخش دوم</a>
+            <a href="#gallery-section" class="nav-link">بخش دوم</a>
           </li>
           <li class="nav-item">
-            <a href="#p3" class="nav-link">بخش سوم</a>
+            <a href="#learn" class="nav-link">بخش سوم</a>
           </li>
           <li class="nav-item">
-            <a href="#p4" class="nav-link">بخش چهارم </a>
+            <a href="#contact-us-section" class="nav-link">بخش چهارم </a>
           </li>
           <li class="nav-item">
-            <a href="#p5" class="nav-link">بخش پنجم</a>
+            <a href="#comments-section" class="nav-link">بخش پنجم</a>
           </li>
         </ul>
       </div>
@@ -120,7 +120,7 @@
   <!-- wave -->
 
   <!-- Boxes -->
-  <section class="p-5">
+  <section id="cards-section" class="p-5">
     <div class="container">
       <div class="row text-center g-4">
         <div class="col-md zoom ">
@@ -340,8 +340,8 @@
   </section>
 
   <!-- Gallery section -->
-  <section class="gallery-grid d-none d-sm-inline">
-    <div class="bg-light-grey">
+  <section id="gallery-section">
+    <div class="gallery-grid d-none d-sm-inline bg-light-grey">
       <div class="container bg-light-grey" style="width: 80vw">
         <div class="col p-3">
           <div class="row p-2">
@@ -411,84 +411,83 @@
         </div>
       </div>
     </div>
+    <div class="w-100 d-inline d-sm-none">
+      <div id="gallery-carousel" class="carousel slide p-3 bg-light-grey" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#gallery-carousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#gallery-carousel" data-bs-slide-to="2"></li>
+          <li data-bs-target="#gallery-carousel" data-bs-slide-to="3"></li>
+          <li data-bs-target="#gallery-carousel" data-bs-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="gallery">
+              <div class="gallery-overlay"></div>
+              <img class="w-100" src="img/gallery-img-1.jpg">
+              <div class="gallery-details">
+                <h3>عکس گالری</h3>
+                <p>شماره ۱</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery">
+              <div class="gallery-overlay"></div>
+              <img class="w-100" src="img/gallery-img-2.jpg">
+              <div class="gallery-details">
+                <h3>عکس گالری</h3>
+                <p>شماره ۱</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery">
+              <div class="gallery-overlay"></div>
+              <img class="w-100" src="img/gallery-img-3.jpg">
+              <div class="gallery-details">
+                <h3>عکس گالری</h3>
+                <p>شماره ۱</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery">
+              <div class="gallery-overlay"></div>
+              <img class="w-100" src="img/gallery-img-4.jpg">
+              <div class="gallery-details">
+                <h3>عکس گالری</h3>
+                <p>شماره ۱</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery">
+              <div class="gallery-overlay"></div>
+              <img class="w-100" src="img/gallery-img-5.jpg">
+              <div class="gallery-details">
+                <h3>عکس گالری</h3>
+                <p>شماره ۱</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </section>
 
-  <div class="w-100 d-inline d-sm-none">
-    <div id="gallery-carousel" class="carousel slide p-3 bg-light-grey" data-bs-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="2"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="3"></li>
-        <li data-bs-target="#gallery-carousel" data-bs-slide-to="4"></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="gallery">
-            <div class="gallery-overlay"></div>
-            <img class="w-100" src="img/gallery-img-1.jpg">
-            <div class="gallery-details">
-              <h3>عکس گالری</h3>
-              <p>شماره ۱</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="gallery">
-            <div class="gallery-overlay"></div>
-            <img class="w-100" src="img/gallery-img-2.jpg">
-            <div class="gallery-details">
-              <h3>عکس گالری</h3>
-              <p>شماره ۱</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="gallery">
-            <div class="gallery-overlay"></div>
-            <img class="w-100" src="img/gallery-img-3.jpg">
-            <div class="gallery-details">
-              <h3>عکس گالری</h3>
-              <p>شماره ۱</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="gallery">
-            <div class="gallery-overlay"></div>
-            <img class="w-100" src="img/gallery-img-4.jpg">
-            <div class="gallery-details">
-              <h3>عکس گالری</h3>
-              <p>شماره ۱</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="gallery">
-            <div class="gallery-overlay"></div>
-            <img class="w-100" src="img/gallery-img-5.jpg">
-            <div class="gallery-details">
-              <h3>عکس گالری</h3>
-              <p>شماره ۱</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#gallery-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#gallery-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-
   <!--  Contact us section -->
-  <section class="contact-us">
+  <section id="contact-us-section" class="contact-us">
     <div class="grid-container d-sm-flex d-grid align-self-center justify-content-evenly">
       <div class="d-flex d-sm-grid align-self-center">
         <img src="img/whatsapp.svg" class="social-media-icon px-sm-2 py-2" />
@@ -504,7 +503,7 @@
   </section>
 
 
-  <section class="comments m-0">
+  <section id="comments-section" class="comments m-0">
     <p class="comments-title m-2">نظرات مشتریان</p>
     <div class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
