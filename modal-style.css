@@ -1,0 +1,11 @@
+.modal-body p {
+    font-size: larger;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.modal-footer button {
+    width: 75px;
+    font-size: larger;
+    font-family: 'Cinema';
+}

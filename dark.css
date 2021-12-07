@@ -81,3 +81,14 @@ footer {
 }
 
 /* modal dark mode changes */
+.modal-content {
+    background-color: #2b2b2b;
+}
+
+.modal-body p {
+    color: lightgray;
+}
+
+.modal-footer button {
+    color: lightgray;
+}
