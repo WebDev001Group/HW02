@@ -16,3 +16,11 @@ section{
     color: white;
     background-color: dimgray;
   }
+
+.bg-light-grey {
+    background-color: darkgray !important;
+}
+
+/*.bg-light {*/
+/*    */
+/*}*/
