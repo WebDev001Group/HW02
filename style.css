@@ -78,3 +78,65 @@ nav{
     display: none;
   }
 }
+
+@media(min-width: 600px){
+  .card{
+    flex-direction: row;
+  }
+
+  .card-body{
+    max-width: 50%
+  }
+
+  .card-img{
+    float: right;
+  }
+
+  .card-text{
+    font-size: large;
+  }
+
+}
+
+@media(max-width: 600px){
+  .card{
+    flex-direction: column-reverse;
+  }
+
+}
+
+
+@font-face {
+  font-family: 'b nazanin';
+  src: url('?view');
+  src: url('http://cdn.bayan.ir/blog/templates/shared/fonts/BNazanin.eot?view#iefix') format('embedded-opentype'),
+    url('http://cdn.bayan.ir/blog/templates/shared/fonts/BNazanin.woff?view') format('woff'),
+    url('http://cdn.bayan.ir/blog/templates/shared/fonts/BNazanin.ttf?view') format('truetype');
+}
+
+@font-face {
+  font-family: 'sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://bayanbox.ir/download/7254718425283737932/IRANSans.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Gandom';
+	src: url(http://bayanbox.ir/download/4529737118551011182/Gandom.ttf) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'yekan';
+  src: url('http://cdn.bayan.ir/blog/templates/shared/fonts/BYekan.woff?download') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-text{
+  font-size: medium;
+  font-family: 'yekan';
+}
+
