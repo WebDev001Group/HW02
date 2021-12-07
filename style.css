@@ -105,6 +105,10 @@ nav{
     flex-direction: column-reverse;
   }
 
+  .carousel-control{
+    display: none;
+  }
+
 }
 
 .carousel-control{
