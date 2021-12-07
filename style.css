@@ -111,9 +111,16 @@ nav{
   position: absolute;
   width: 20px;
   max-height: 20px;
-  top:50%
+  top:50%;
 }
 
+#left{
+  left: -40px;
+}
+
+#right{
+  right: -40px;
+}
 
 @font-face {
   font-family: 'b nazanin';
