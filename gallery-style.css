@@ -1,0 +1,106 @@
+.bg-light-grey {
+    background-color: #E0E0E0 !important;
+}
+
+/*@import url(https://fonts.googleapis.com/css?family=Raleway);*/
+
+.gallery {
+    position: relative;
+    margin: auto;
+    overflow: hidden
+}
+
+.gallery .gallery-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s
+}
+
+@media (min-width: 576px) {
+    .gallery:hover .gallery-overlay {
+        opacity: 1
+    }
+
+    .gallery:hover .gallery-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 575px) {
+    .gallery:active .gallery-overlay {
+        opacity: 1
+    }
+
+    .gallery:active .gallery-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+.gallery img {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px
+}
+
+.gallery-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s
+}
+
+.gallery-details h3 {
+    color: whitesmoke;
+    font-size: 10vw;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-family: Cinema;
+}
+
+.gallery-details p {
+    color: whitesmoke;
+    font-size: 5vw;
+}
+
+@media (min-width: 576px) {
+    .gallery-details h3 {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    .gallery-details p {
+        font-size: 2vw;
+        /*font-weight: 600;*/
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border-bottom: 0;
+}
+
+.carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}

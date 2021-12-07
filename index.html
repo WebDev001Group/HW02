@@ -8,16 +8,18 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+<<<<<<< HEAD
     <script src="index.js"></script>
 
+=======
+<!--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>-->
+>>>>>>> c8ddf89e0a8b37ca98c067dc05428cf02e4ca2ad
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
           crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"></script>
@@ -29,6 +31,7 @@
 
   <link id="dark-theme-style" rel="stylesheet" />
 
+  <link rel="stylesheet" href="gallery-style.css">
 </head>
 
 <body>
@@ -335,6 +338,164 @@
     </div>
   </section>
 
+  <!-- Gallery section -->
+  <section class="gallery-grid d-none d-sm-inline">
+    <div class="container bg-light-grey">
+      <div class="col p-3">
+        <div class="row p-2">
+          <div class="col-6">
+            <div class="gallery">
+              <a href="#">
+                <div class="gallery-overlay"></div>
+                <img class="gallery-img w-100" src="img/gallery-img-1.jpg">
+                <div class="gallery-details">
+                  <h3 class="gallery-title">عکس گالری</h3>
+                  <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۱</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="gallery">
+              <a href="#">
+                <div class="gallery-overlay"></div>
+                <img class="gallery-img w-100" src="img/gallery-img-2.jpg">
+                <div class="gallery-details">
+                  <h3 class="gallery-title">عکس گالری</h3>
+                  <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۲</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row p-2">
+          <div class="col-4">
+            <div class="gallery">
+              <a href="#">
+                <div class="gallery-overlay"></div>
+                <img class="gallery-img w-100" src="img/gallery-img-3.jpg">
+                <div class="gallery-details">
+                  <h3 class="gallery-title">عکس گالری</h3>
+                  <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۳</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="gallery">
+              <a href="#">
+                <div class="gallery-overlay"></div>
+                <img class="gallery-img w-100" src="img/gallery-img-4.jpg">
+                <div class="gallery-details">
+                  <h3 class="gallery-title">عکس گالری</h3>
+                  <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۴</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="gallery">
+              <a href="#">
+                <div class="gallery-overlay"></div>
+                <img class="gallery-img w-100" src="img/gallery-img-5.jpg">
+                <div class="gallery-details">
+                  <h3 class="gallery-title">عکس گالری</h3>
+                  <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۵</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="gallery-carousel" class="d-inline d-sm-none w-100 p-3 carousel slide" data-ride="carousel" data-touch="false"
+       data-interval="false">
+    <ol class="carousel-indicators">
+      <button type="button" data-target="#gallery-carousel" data-slide-to="0" class="active"></button>
+      <button type="button" data-target="#gallery-carousel" data-slide-to="1"></button>
+      <button type="button" data-target="#gallery-carousel" data-slide-to="2"></button>
+      <button type="button" data-target="#gallery-carousel" data-slide-to="3"></button>
+      <button type="button" data-target="#gallery-carousel" data-slide-to="4"></button>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="gallery">
+          <div class="gallery-overlay"></div>
+          <img class="gallery-img w-100" src="img/gallery-img-1.jpg">
+          <div class="gallery-details">
+            <h3 class="gallery-title">عکس گالری</h3>
+            <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۱</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="gallery">
+          <div class="gallery-overlay"></div>
+          <img class="gallery-img w-100" src="img/gallery-img-2.jpg">
+          <div class="gallery-details">
+            <h3 class="gallery-title">عکس گالری</h3>
+            <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۲</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" role="button" href="#gallery-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" role="button" href="#gallery-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <!--  <section>-->
+  <!--    <div class="w-100 p-3">-->
+  <!--      <div id="gallery-carousel" class="carousel slide" data-interval="false" data-ride="carousel">-->
+  <!--        <ol class="carousel-indicators">-->
+  <!--          <li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>-->
+  <!--          <li data-target="#gallery-carousel" data-slide-to="1"></li>-->
+  <!--        </ol>-->
+
+  <!--        <div class="carousel-inner">-->
+  <!--          <div class="carousel-item active">-->
+  <!--            <div class="gallery">-->
+  <!--              <div class="gallery-overlay"></div>-->
+  <!--              <img class="gallery-img w-100" src="img/gallery-img-1.jpg">-->
+  <!--              <div class="gallery-details">-->
+  <!--                <h3 class="gallery-title">عکس گالری</h3>-->
+  <!--                <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۱</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--          <div class="carousel-item">-->
+  <!--            <div class="gallery">-->
+  <!--              <div class="gallery-overlay"></div>-->
+  <!--              <img class="gallery-img w-100" src="img/gallery-img-2.jpg">-->
+  <!--              <div class="gallery-details">-->
+  <!--                <h3 class="gallery-title">عکس گالری</h3>-->
+  <!--                <p class="gallery-text"><i class="fa fa-map-marker"></i>شماره ۲</p>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+
+  <!--        <a class="carousel-control-prev" href="#gallery-carousel" role="button" data-slide="prev">-->
+  <!--          <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+  <!--          <span class="sr-only">Previous</span>-->
+  <!--        </a>-->
+  <!--        <a class="carousel-control-next" href="#gallery-carousel" role="button" data-slide="next">-->
+  <!--          <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+  <!--          <span class="sr-only">Next</span>-->
+  <!--        </a>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </section>-->
+
   <!--  Contact us section -->
   <section class="contact-us bg-white">
     <div class="grid-container d-sm-flex d-grid align-self-center justify-content-evenly bg-dark">
@@ -351,7 +512,7 @@
     </div>
   </section>
 
-  <div style="height: 275px;"></div>
+  <div class="above-footer"></div>
 
   <!-- footer -->
   <div class="rows-2 text-white text-center">
