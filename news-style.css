@@ -90,7 +90,7 @@ footer {
     }
 
     .news-btn {
-        padding: .25vw 1.5vw;
+        /*padding: .25vw .5vw;*/
         font-size: x-large;
         max-width: 150px;
         width: 25vw;
