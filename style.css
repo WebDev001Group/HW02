@@ -1,6 +1,15 @@
 @font-face {
-    font-family: 'Cinema';
-    src: url("fonts/Cinema.ttf");
+  font-family: 'Cinema';
+  src: url("fonts/Cinema.ttf");
+}
+
+@font-face {
+  font-family: 'BalooBhaijaan2';
+  src: url("fonts/BalooBhaijaan2.ttf");
+}
+
+body {
+  font-family: BalooBhaijaan2;
 }
 
 @media (min-width:576px) {
